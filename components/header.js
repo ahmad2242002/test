@@ -17,17 +17,17 @@ export default class Header extends Component {
         </div>
         <div className="flex items-center rounded-full bg-white hover:drop-shadow-lg border-2 border-gray-200 m-1 p-2">
             <input type="text" placeholder="Start your search" className="flex-grow text-gray-500 focus:outline-none ms-3"  />
-            <div className="bg-red-400 rounded-full ">
+            <div className="bg-red-400 rounded-full md:visible invisible">
             <FontAwesomeIcon className="text-lg px-2.5 py-2 h-8 text-white" icon={faMagnifyingGlass} />
             </div>
         </div>
         <div className="flex justify-end items-center mx-1 p-2">
-            <div className="flex items-center rounded-full hover:bg-gray-200 hover:cursor-pointer py-3 px-3 mx-2">
+            <div className="md:visible invisible flex items-center rounded-full hover:bg-gray-200 hover:cursor-pointer py-3 px-3 mx-2">
                 Become a Host
             </div>
 
             <div className="flex items-center rounded-full hover:bg-gray-200 hover:cursor-pointer py-2 px-3 mx-3">
-            <FontAwesomeIcon  icon={faGlobe} className="text-lg text-gray-700"/>
+            <FontAwesomeIcon  icon={faGlobe} className="sm:visible invisible text-lg text-gray-700"/>
             </div>
 
             <div
