@@ -16,7 +16,7 @@ export default function Home() {
             I&apos;m flexible</button>
         </div>
    </div>
-   <div className="mx-44 my-5">
+   <div className="lg:mx-44 md:mx-20 sm:mx-10 mx-5 my-5">
         <div className="text-4xl font-semibold my-8 p-1">Explore Nearby</div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             <div className="m-2 my-4 flex items-center grid-flow-row-dense hover:scale-105 transition duration-200  hover:bg-gray-100 hover:cursor-pointer rounded-xl">
@@ -117,7 +117,7 @@ export default function Home() {
         </div>
     </div>
 
-    <div className="mx-44 my-5">
+    <div className="lg:mx-44 md:mx-20 sm:mx-10 mx-5  my-5">
         <div className="text-4xl font-semibold my-8 p-1">Live Anywhere</div>
         <div className="flex p-2 flex-nowrap overflow-x-auto scrollbar-hide hover:cursor-pointer">
             <div className="relative h-25 w-25 p-2 hover:scale-105 transition duration-200">
@@ -140,8 +140,8 @@ export default function Home() {
         </div>
     </div>
 
-    <div className="h-80 w-100 ">
-    <div className = "relative hover:cursor-pointer flex flex-col justify-center items-start overflow-hidden bg-no-repeat bg-image2 bg-cover h-[400px] w-100 mx-48 mb-40 mt-20 rounded-2xl">
+    <div className="h-80 w-100 lg:mx-44 md:mx-20 sm:mx-10 mx-5  ">
+    <div className = "relative hover:cursor-pointer flex flex-col justify-center items-start overflow-hidden bg-no-repeat bg-image2 bg-cover h-[400px] w-100 mb-40 mt-20 rounded-2xl">
     <div className = "mx-12 -mt-12">
     <div className=" text-black text-4xl font-450">The Greatest<br></br>Outdoor</div>
     <div className=" text-black text-medium m-1">Wishlists created by Hassan</div>
