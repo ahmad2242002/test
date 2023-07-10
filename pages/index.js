@@ -17,7 +17,7 @@ export default function Home() {
         </div>
    </div>
    <div className="mx-44 my-5">
-        <div className="text-4xl font-semibold my-8 p-1">Explore Nearby</div>
+        <div className="text-4xl font-semibold my-8 p-1">Explore Far off</div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             <div className="m-2 my-4 flex items-center grid-flow-row-dense hover:scale-105 transition duration-200  hover:bg-gray-100 hover:cursor-pointer rounded-xl">
                     <div className="card-image z-10 bg-cover h-16 w-16 rounded-lg "></div>
