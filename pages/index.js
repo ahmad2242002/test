@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <main>
     <Header/>
-   <div className='relative flex flex-col justify-center items-center overflow-hidden bg-cover bg-no-repeat h-[700px] bg-image'>
-   <div className=" text-black text-xl font-semibold">Not sure where to go? Perfect.</div>
+   <div className='relative flex flex-col justify-center items-center overflow-hidden bg-no-repeat h-[250px] min-[500px]:h-[320px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[720px] 2xl:bg-cover bg-image bg-contain'>
+   <div className=" text-black text-sm md:text-xl font-normal">Not sure where to go? Perfect.</div>
         <div className="m-5">
-            <button className="rounded-full px-10 py-4 hover:drop-shadow-2xl text-base text-purple-500 font-bold bg-white drop-shadow-md active:scale-90 transition duration-200">
+            <button className="rounded-full px-3 md:px-10 md:py-4 py-2 hover:drop-shadow-2xl text-xs md:text-base text-purple-500 md:font-bold font-medium bg-white drop-shadow-md active:scale-90 transition duration-200">
             I&apos;m flexible</button>
         </div>
    </div>

@@ -18,8 +18,8 @@ import { document } from 'postcss';
             <div className=" justify-center items-center mx-5 my-auto logo bg-cover h-10 w-32">
                
              </div>
-             <div className="flex items-center rounded-full bg-white hover:drop-shadow-lg border-2 border-gray-200 m-1 p-2">
-                 <input type="text" placeholder="Start your search" onChange={(e)=>{setShowCalendar(e.target.value)}} className="flex-grow text-gray-500 focus:outline-none ms-3"  />
+             <div className="flex items-center rounded-full bg-white hover:drop-shadow-lg border-2 border-gray-200 m-1 p-2  md:visible invisible">
+                 <input type="text" placeholder="Start your search" onChange={(e)=>{setShowCalendar(e.target.value)}} className="visible sm:w-auto w-10 flex-grow text-gray-500 focus:outline-none ms-3"  />
                  <div className="bg-red-400 rounded-full md:visible invisible">
                  <FontAwesomeIcon className="text-lg px-2.5 py-2 h-8 text-white" icon={faMagnifyingGlass} />
                  </div>
@@ -40,12 +40,12 @@ import { document } from 'postcss';
              </div>
              {showcalendar != "" ? 
                 <div className='mx-auto col-span-3'>
-                  <CustomCalender ></CustomCalender>
+                    <CustomCalender></CustomCalender>
                     <div className="grid grid-cols-2 mt-4 mx-2 pb-1 border-b-2">
                     <div className="text-2xl font-semibold justify-items-start">Number of Guests</div>
                     <div className="flex items-center justify-end">
                     <FontAwesomeIcon icon= {faUserGroup} className="mx-2" /> 
-                    <input className="w-12 h-8 border-none focus:outline-0 text-red-500 text-lg" value={1} type="number"></input>
+                    <input className="w-10 h-8 border-none focus:outline-0 text-red-500 text-lg placeholder-red-500" placeholder='1' min={1} max={999} type="number"></input>
                     </div>
                     </div>
                     <div className="grid grid-cols-2 mt-4 mx-2 pb-1"> 

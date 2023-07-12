@@ -4,7 +4,7 @@ export default class Footer extends Component {
   render() {
     return (
         <footer>
-        <div className = " mt-36 px-32 py-14 bg-gray-100 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className = " mt-36 px-32 py-14 bg-gray-100 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
             <div className = " flex flex-col space-y-4 my-3">
                 <li className = " text-xs font-bold list-none">ABOUT</li>
                 <li className = "text-xs font-normal list-none">How Airbnb works</li>
