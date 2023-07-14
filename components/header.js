@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
+import Image from 'next/image'
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import logo from '../images/logo.webp'
 import CustomCalender from './calender.js'
 import {
     faMagnifyingGlass,
@@ -14,23 +16,23 @@ import { document } from 'postcss';
   const Header = ()=>{ {
     const [showcalendar, setShowCalendar] = useState("");
     return (
-         <div className="max-w-full sticky top-0 z-20 grid grid-cols-3 bg-white p-4 drop-shadow-lg">
-            <div className=" justify-center items-center mx-5 my-auto logo bg-cover h-10 w-32">
-               
+         <div className="max-w-full justify-center items-center sticky top-0 z-20 grid grid-cols-3 bg-white p-4 drop-shadow-lg">
+            <div className="justify-center relative items-center mx-5 my-auto h-10 w-32">
+            <Image src = {logo} layout='fit' fill alt='Logo of Airbnb' quality={100}></Image>
              </div>
-             <div className="flex items-center rounded-full bg-white hover:drop-shadow-lg border-2 border-gray-200 m-1 p-2  md:visible invisible">
-                 <input type="text" placeholder="Start your search" onChange={(e)=>{setShowCalendar(e.target.value)}} className="visible sm:w-auto w-10 flex-grow text-gray-500 focus:outline-none ms-3"  />
-                 <div className="bg-red-400 rounded-full md:visible invisible">
+             <div className="h-14 flex relative items-center rounded-full bg-white hover:drop-shadow-lg border-2 border-gray-200 ms-8 px-2  md:visible invisible">
+                 <input type="text" placeholder="Start your search" onChange={(e)=>{setShowCalendar(e.target.value)}} className="visible w-24 md:w-fit flex-grow text-gray-500 focus:outline-none ms-3"  />
+                 <div className=" relative bg-red-400 rounded-full lg:visible invisible">
                  <FontAwesomeIcon className="text-lg px-2.5 py-2 h-8 text-white" icon={faMagnifyingGlass} />
                  </div>
              </div>
-             <div className="flex justify-end items-center mx-1 p-2">
+             <div className="flex justify-end items-center mx-1">
                  <div className="md:visible invisible flex items-center rounded-full hover:bg-gray-200 hover:cursor-pointer py-3 px-3 mx-2">
                      Become a Host
                  </div>
           
                  <div className="flex items-center rounded-full hover:bg-gray-200 hover:cursor-pointer py-2 px-3 mx-3">
-                 <FontAwesomeIcon  icon={faGlobe} className="sm:visible invisible text-lg text-gray-700"/>
+                 <FontAwesomeIcon  icon={faGlobe} className=" text-lg text-gray-700"/>
                  </div>
                  <div
                      className="flex items-center rounded-full bg-white hover:drop-shadow-lg hover:cursor-pointer border-2 border-gray-200">
